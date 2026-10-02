@@ -1,9 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         Vehicle car1 = new Vehicle("Toyota", "Camry", 2020);
-
         Vehicle car2 = new Vehicle("Ford", "Mustang", 1995);
-  
         Vehicle car3 = new Vehicle("Tesla", "Model 3", 2023);
 
         car1.displayInfo();
