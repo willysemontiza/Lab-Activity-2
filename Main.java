@@ -1,26 +1,23 @@
 public class Main {
     public static void main(String[] args) {
-        Vehicle car1 = new Vehicle();
-        car1.brand = "Toyota";
-        car1.model = "Camry";
-        car1.year = 2020;
+        Vehicle car1 = new Vehicle("Toyota", "Camry", 2020);
 
-        Vehicle car2 = new Vehicle();
-        car2.brand = "Ford";
-        car2.model = "Mustang";
-        car2.year = 1995; 
-        Vehicle car3 = new Vehicle();
-        car3.brand = "Tesla";
-        car3.model = "Model 3";
-        car3.year = 2023;
+        Vehicle car2 = new Vehicle("Ford", "Mustang", 1995);
+  
+        Vehicle car3 = new Vehicle("Tesla", "Model 3", 2023);
 
-        Vehicle[] vehicles = {car1, car2, car3};
+        car1.displayInfo();
+        System.out.println("Age: " + car1.calculateAge());
+        System.out.println("Vintage: " + car1.isVintage());
+        System.out.println();
 
-        for (int i = 0; i < vehicles.length; i++) {
-            System.out.println("--- Vehicle " + (i + 1) + " ---");
-            vehicles[i].displayInfo();
-            System.out.println("Age: " + vehicles[i].calculateAge());
-            System.out.println("Is Vintage? " + vehicles[i].isVintage());
-        }
+        car2.displayInfo();
+        System.out.println("Age: " + car2.calculateAge());
+        System.out.println("Vintage: " + car2.isVintage());
+        System.out.println();
+
+        car3.displayInfo();
+        System.out.println("Age: " + car3.calculateAge());
+        System.out.println("Vintage: " + car3.isVintage());
     }
 }
