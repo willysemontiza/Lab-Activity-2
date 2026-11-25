@@ -1,3 +1,4 @@
+package vehicles;
 
 public abstract class Vehicle {
 
@@ -26,11 +27,7 @@ public abstract class Vehicle {
         }
     }
 
-    // Abstract methods
-    public abstract void moveForward();
-    public abstract void moveBackward();
-    public abstract void moveLeft();
-    public abstract void moveRight();
+    public abstract void move();
 
     public void displayInfo() {
         System.out.println("Brand: " + brand +
@@ -45,5 +42,4 @@ public abstract class Vehicle {
     public boolean isVintage() {
         return calculateAge() > 25;
     }
-
 }
